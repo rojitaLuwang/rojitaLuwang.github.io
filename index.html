@@ -1,9 +1,103 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>A Bright Sunny Day</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+
+  <head>
+    <title>CSS Selector- Borders and Margins</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>CHEAT SHEET-CSS Selectors</h1>
+    <h2>(Borders and Margins)</h2>
+    <section>
+      <h2>Border</h2>
+      <p id="para1">The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+      <table class="pushTable">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>border-style</td>
+            <td>solid, dotted, dashed, none, double, ridge etc.</td>
+            <td>The border-style property specifies what kind of border to display.</td>
+            <td>border-style: solid; &nbsp;border-style: dotted solid;&nbsp;border-top-style: dotted;</td>
+          </tr>
+          <tr>
+            <td>border-width</td>
+            <td>thin, medium, thick or specific size (in px, pt, cm, em, etc)</td>
+            <td>The border-width property specifies the width of the four borders.</td>
+            <td>border-style: solid; &nbsp;&nbsp;border-style: dotted solid;&nbsp;&nbsp;border-top-style: dotted;</td>
+          </tr>
+          <tr>
+            <td>border-color</td>
+            <td>blue, green, HEX, HSL, rgb</td>
+            <td>The border-color property is used to set the color of the four borders.</td>
+            <td>border-color: green;border-color: rgb(201, 76, 76);border-color: hsl(89, 43%, 51%);</td>
+          </tr>
+          <tr>
+            <td>border-radius</td>
+            <td>px, %, em</td>
+            <td>The border-radius property is used to add rounded borders to an element.</td>
+            <td>border-radius: 5px;border-radius: 2em;border-radius: 25%;</td>
+          </tr>
+        </tbody>
+        <tfoot>
+           <tr>
+            <td>border</td>
+            <td>----------</td>
+            <td>The border property is a shorthand property for the following individual border properties:border-width,
+border-style (required) and
+border-color</td>
+            <td>border: 5px solid red;border: 4px dotted blue;border: double;</td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr class="thick">
+    </section>
+    <section>
+      <h2>Margins</h2>
+      <article>
+        <p>
+          Margins are used to create space around elements, outside of any defined borders.
+  margin: 25px 50px 75px 100px;
+        </p>
+        
+          <h3 class="highlight">The auto Value</h3>
+        <p>
+          You can set the margin property to auto to horizontally center the element within its container.
+        </p>
+      </article>
+      <article>
+        <h3 class="highlight">Margin Collapse</h3>
+        <p>
+          Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+        </p>
+        <p class="makeItalics">
+          This does not happen on left and right margins! Only top and bottom margins!
+        </p>
+        <p>
+          h1 {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;margin: 0 0 50px 0;<br>
+}
+<br><br>
+h2 { <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;margin: 20px 0 0 0;<br>
+}
+<br><br>
+          Common sense would seem to suggest that the vertical margin between the &lt;h1&gt; and the &lt;h2&gt; would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.
+        </p>
+      </article>
+      <br><br>
+    </section>
+    <hr class="thick">
+  </body>
+  <footer>
+    <p>&copy; Cheat Sheet-Feedback welcome</p>
+  </footer>
 </html>
