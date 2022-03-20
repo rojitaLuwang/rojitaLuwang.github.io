@@ -132,16 +132,3 @@ h2 {
 #bitter {
   font-family: Bitter;
 }
-
-footer {
-  position: fixed;
-  width: 100%;
-  height: 40px;
-  padding: 0;
-  margin: 0;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  background-color: gainsboro;
-  color: mediumvioletred; 
-}
