@@ -1,48 +1,136 @@
 body {
-  font-family: "Lucida Console", Courier, monospace; 
-  background-color: antiquewhite;
+  font-family: Lora;
+  margin: 0 10%;
 }
 
-h1 {
+.colors, .fonts, .textstyle, .styleguide {
+  border: 2px solid #8B008B;
   width: 100%;
-  background-color: gainsboro;
-  color: mediumvioletred;
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
+  padding: auto;
+  margin: 10px auto;
+}
+
+h2, .text-style-container, .style-guide-container {
+  padding-left: 10px;
 }
 
 h2 {
-  color: darkmagenta;
-  font-size:35px;
-  text-align: center;
+  text-decoration: underline;
 }
 
-table, th, td {
-  border: 2px solid darkmagenta;
-  width: 800px;
-  border-collapse: collapse;
+.color-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 10px 10px;
+  overflow: auto;
 }
 
-td {
-  text-align: center;
-  padding: 0;
+.font-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
 }
 
-article p {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  padding: 0 20px;
-}
-
-tr:nth-child(even) {background-color: gainsboro;}
-
-tr:hover {
-  background-color: darksalmon;
-}
-
-thead {
-  background-color: mediumorchid;
+.color-grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
   font-size: 20px;
+  text-align: center;
+  height: 80px;
+  align-content: space-evenly;
+}
+
+.font-grid-item {
+  font-size: 20px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.font-grid-item p:nth-child(1){
+  font-weight: 400;
+}
+
+.font-grid-item p:nth-child(2){
+  font-style: bold;
+  font-weight: 900;
+}
+
+.font-grid-item p:nth-child(3){
+  font-style: italic;
+  font-weight: 400;
+}
+
+.main-heading h3 {
+  font-weight: 900;
+  font-size: 30px;
+  font-family: Lora;
+}
+
+.sub-heading h3 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Lora;
+}
+
+.paragraph h3 {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: Rubik;
+}
+
+.links h3 {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: Rubik;
+  text-decoration: underline;
+}
+
+.example {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#orchid {
+  background-color: #DA70D6;
+}
+
+#vividcerise {
+  background-color: #DA1D81;
+}
+
+#lavenderblush {
+  background-color: #FFF0F5;
+}
+
+#darkmagenta {
+  background-color: #8B008B;
+}
+
+#lightgold {
+  background-color: #FDDC5C;
+}
+
+#nunito {
+  font-family: Nunito;
+}
+
+#dancing-script {
+  font-family: "Dancing Script";
+}
+
+#rubik {
+  font-family: Rubik;
+}
+
+#lora {
+  font-family: Lora;
+}
+
+#bitter {
+  font-family: Bitter;
 }
 
 footer {
@@ -56,27 +144,4 @@ footer {
   text-align: center;
   background-color: gainsboro;
   color: mediumvioletred; 
-}
-
-.pushTable {
-  margin-left: 170px;
-}
-
-.highlight {
-  color: mediumorchid;
-  font-size: 20px;
-  padding: 0 20px;
-}
-
-.makeItalics {
-  font-style: italic;
-  color: crimson;
-}
-
-.thick {
-  border: 2px dotted;
-}
-
-#para1 {
-  text-align: center;
 }
