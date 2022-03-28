@@ -25,6 +25,10 @@ html {
       text-decoration: none;
       color: black;
   }
+
+.click:hover {
+    color: Crimson;
+  }
   
   @media only screen and (max-width: 800px) {
     .main-content {
