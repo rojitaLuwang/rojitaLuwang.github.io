@@ -72,7 +72,7 @@ html {
   }
 
   .banner {
-    background-image: url("./resources/images/idea.jpg");
+    background-image: url("./idea.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
