@@ -1,82 +1,188 @@
-body {
-  font-family: "Lucida Console", Courier, monospace; 
-  background-color: antiquewhite;
-}
+html {
+    font-size: 16px;
+    background-color: MistyRose;
+    font-family: "Montserrat";
+  }
+  
+  .main-content {
+    position: relative;
+    top: 5.3125rem; /* To offset for fixed header. */
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .image-container img {
+    display: block;
+    max-width: 100%;
+  }
+  figcaption {
+    padding: 1rem;
+  }
 
-h1 {
-  width: 100%;
-  background-color: gainsboro;
-  color: mediumvioletred;
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
-}
+  a {
+      text-decoration: none;
+      color: black;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .main-content {
+      top: 5rem;
+    }
+  }
+  
+  header h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 3rem;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-color: OliveDrab;
+  }
+  
+  .links-section {
+    display: flex;
+  }
+  
+  .links {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .links li {
+    padding: 1rem;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .links {
+        flex-wrap: wrap;
+    }
 
-h2 {
-  color: darkmagenta;
-  font-size:35px;
-  text-align: center;
-}
+    .links li {
+        padding: 0.5rem;
+    }
+  }
 
-table, th, td {
-  border: 2px solid darkmagenta;
-  width: 800px;
-  border-collapse: collapse;
-}
+  .banner {
+    background-image: url("./resources/images/idea.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 43.5rem;
+  }
+  
+  .banner-display {
+    position: relative;
+    top: 15rem;
+    background-color: MistyRose;
+    padding: 1rem;
+  }
 
-td {
-  text-align: center;
-  padding: 0;
-}
+  @media only screen and (max-width:800px) {
+      .banner {
+          height: 35rem;
+      }
+      .banner-display {
+          top:10rem;
+          padding: 0;
+      }
+  }
+  
+  .extend {
+    font-weight: 800;
+  }
+  
+  .extend-word {
+    font-family: "Dancing Script";
+    font-weight: 500;
+  }
+  
+  .attractions {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .attraction-flex {
+    flex: 1 2 15rem;
+    padding: 2rem;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .attraction-flex {
+      padding: 1.5rem;
+    }
 
-article p {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  padding: 0 20px;
-}
+    .level {
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+  }
+  
+  .level {
+    height: 2rem;
+    font-weight: 900;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+  }
+  
+  .our-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .team-flex {
+    flex: 1 1 15rem;
+    padding: 1rem;
+  }
 
-tr:nth-child(even) {background-color: gainsboro;}
+  @media only screen and (max-width: 800px) {
+      .team-flex {
+        padding: 0.8rem;
+      }
+  }
+  
+  .contact-us {
+    height: 12rem;
+    margin: 2rem;
+  }
+  
+  .contact-us h2 {
+    font-size: 2rem;
+  }
 
-tr:hover {
-  background-color: darksalmon;
-}
-
-thead {
-  background-color: mediumorchid;
-  font-size: 20px;
-}
-
-footer {
-  position: fixed;
-  width: 100%;
-  height: 40px;
-  padding: 0;
-  margin: 0;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  background-color: gainsboro;
-  color: mediumvioletred; 
-}
-
-.pushTable {
-  margin-left: 170px;
-}
-
-.highlight {
-  color: mediumorchid;
-  font-size: 20px;
-  padding: 0 20px;
-}
-
-.makeItalics {
-  font-style: italic;
-  color: crimson;
-}
-
-.thick {
-  border: 2px dotted;
-}
-
-#para1 {
-  text-align: center;
-}
+  @media only screen and (max-width: 800px) {
+      .contact-us {
+          height: 8rem;
+          margin: 1rem;
+      }
+      .contact-us h2 {
+          padding-bottom: 1rem;
+          font-size: 1rem;
+      }
+  }
+  
+  footer {
+    background-color: OliveDrab;
+    height: 2.2rem;
+    position: fixed;
+    padding-top: 0;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
