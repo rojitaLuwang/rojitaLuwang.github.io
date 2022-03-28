@@ -28,7 +28,7 @@ html {
   }
 
 .click:hover {
-    color: Crimson;
+    background-color: Crimson;
   }
   
   @media only screen and (max-width: 800px) {
