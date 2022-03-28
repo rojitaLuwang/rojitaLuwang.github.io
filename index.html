@@ -1,101 +1,123 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <title>CSS Selector- Borders and Margins</title>
+    <title>Hawthorne Farm</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
-    <h1>CHEAT SHEET-CSS Selectors</h1>
-    <h2>(Borders and Margins)</h2>
-    <section>
-      <h2>Border</h2>
-      <p id="para1">The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
-      <table class="pushTable">
-        <thead>
-          <tr>
-            <th>Property</th>
-            <th>Value</th>
-            <th>Description</th>
-            <th>Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>border-style</td>
-            <td>solid, dotted, dashed, none, double, ridge etc.</td>
-            <td>The border-style property specifies what kind of border to display.</td>
-            <td>border-style: solid; &nbsp;border-style: dotted solid;&nbsp;border-top-style: dotted;</td>
-          </tr>
-          <tr>
-            <td>border-width</td>
-            <td>thin, medium, thick or specific size (in px, pt, cm, em, etc)</td>
-            <td>The border-width property specifies the width of the four borders.</td>
-            <td>border-style: solid; &nbsp;&nbsp;border-style: dotted solid;&nbsp;&nbsp;border-top-style: dotted;</td>
-          </tr>
-          <tr>
-            <td>border-color</td>
-            <td>blue, green, HEX, HSL, rgb</td>
-            <td>The border-color property is used to set the color of the four borders.</td>
-            <td>border-color: green;border-color: rgb(201, 76, 76);border-color: hsl(89, 43%, 51%);</td>
-          </tr>
-          <tr>
-            <td>border-radius</td>
-            <td>px, %, em</td>
-            <td>The border-radius property is used to add rounded borders to an element.</td>
-            <td>border-radius: 5px;border-radius: 2em;border-radius: 25%;</td>
-          </tr>
-        </tbody>
-        <tfoot>
-           <tr>
-            <td>border</td>
-            <td>----------</td>
-            <td>The border property is a shorthand property for the following individual border properties:border-width,
-border-style (required) and
-border-color</td>
-            <td>border: 5px solid red;border: 4px dotted blue;border: double;</td>
-          </tr>
-        </tfoot>
-      </table>
-      <hr class="thick">
-    </section>
-    <section>
-      <h2>Margins</h2>
-      <article>
-        <p>
-          Margins are used to create space around elements, outside of any defined borders.
-  margin: 25px 50px 75px 100px;
-        </p>
-        
-          <h3 class="highlight">The auto Value</h3>
-        <p>
-          You can set the margin property to auto to horizontally center the element within its container.
-        </p>
-      </article>
-      <article>
-        <h3 class="highlight">Margin Collapse</h3>
-        <p>
-          Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
-        </p>
-        <p class="makeItalics">
-          This does not happen on left and right margins! Only top and bottom margins!
-        </p>
-        <p>
-          h1 {<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;margin: 0 0 50px 0;<br>
-}
-<br><br>
-h2 { <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;margin: 20px 0 0 0;<br>
-}
-<br><br>
-          Common sense would seem to suggest that the vertical margin between the &lt;h1&gt; and the &lt;h2&gt; would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.
-        </p>
-      </article>
-      <br><br>
-    </section>
-    <hr class="thick">
+    <header class="header center">
+      <h1>Hawthorne Farm</h1>
+    </header>
+    <main class="main-content">
+      <section class="links-section">
+        <ul class="links center">
+          <li>About</li>
+          <li>Attractions</li>
+          <li>Highlights</li>
+          <li><a href="#our-team">Our Team</a></li>
+          <li><a href="#contact-us" >Contact Us</a></li>
+      </ul>
+      </section>
+      <section class="banner">
+        <div class=" banner-display center">
+          <div class="extend">
+            <h2>Hawthorne Farm</h2>
+          </div>
+          <div class="extend-word">
+            <p>A lasting memorable dayout with your loved ones.</p>
+          </div>
+        </div>
+      </section>
+      <div>
+        <h2 class="level center">Hawthorne Attractions</h2>
+      </div>
+      <section class="attractions">
+        <figure class="attraction-flex image-container center">
+          <img src="./resources/images/bird.jpg" alt="bird spotting">
+          <figcaption>Spotting beauties</figcaption>
+        </figure>
+        <figure class="attraction-flex image-container center">
+          <img src="./resources/images/cycling.jpg" alt="cycling">
+          <figcaption>Feel the freshness</figcaption>
+        </figure>
+        <figure class="attraction-flex image-container center">
+          <img src="./resources/images/dogwalk.jpg" alt="dog walk">
+          <figcaption>Let our friend roam</figcaption>
+        </figure>
+        <figure class="attraction-flex image-container center">
+          <img src="./resources/images/playarea.jpg" alt="play area">
+          <figcaption>Little ones</figcaption>
+        </figure>
+        <figure class="attraction-flex image-container center">
+          <img src="./resources/images/cafe.jpg" alt="cafe">
+          <figcaption>Natural Fill</figcaption>
+        </figure>
+        <figure class="attraction-flex image-container center">
+          <img src="./resources/images/photographs_3.jpg" alt="nature trail">
+          <figcaption>Feel the Trail</figcaption>
+        </figure>
+      </section>
+
+       <!--Highlights section-->
+    <!--  <section class="highlights">
+        <div class="highlight-pics">
+          <figure>
+            <img src="strawberry.jpg" alt="nature trail">
+            <figcaption>Strawberry Picking</figcaption>
+          </figure>
+          <figure>
+            <img src="apple.jpg" alt="fresh apple">
+            <figcaption>Fresh Apple</figcaption>
+          </figure>
+         <figure>
+            <img src="carrot.jpg" alt="carrot">
+            <figcaption>Fresh Vegetables</figcaption>
+          </figure>
+        </div>
+        <div class="samples">
+          <img src="photographs_1.jpg" alt="photograph 1">
+          <img src="photographs_2.jpg" alt="photograph 2">
+          <img src="photographs_3.jpg" alt="photograph 3">
+        </div>
+      </section> -->
+
+      <!--Our Team -->
+      <div id="our-team">
+        <h2 class="level center">Meet Our Team</h2>
+      </div>
+     <section class="our-team">
+        <figure class="team-flex image-container center">
+          <img src="./resources/images/team1.jpg" alt="team 1">
+          <figcaption>Jane Smith-CEO Founder</figcaption>
+        </figure>
+        <figure class="team-flex image-container center">
+          <img src="./resources/images/team2.jpg" alt="team 2">
+          <figcaption>Alex Fischer- Head Management</figcaption>
+        </figure>
+        <figure class="team-flex image-container center">
+          <img src="./resources/images/team3.jpg" alt="team 3">
+          <figcaption>Laura Sullens-Deputy Managemnet</figcaption>
+        </figure>
+      </section>
+
+      <!--Contact Us -->
+      <section class="contact-us center" id="contact-us">
+        <h2>Contact Us</h2>
+        <div>
+          <p>admin@hawthornefarm.com</p>
+          <p>023-567-9999</p>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer -->
+    <footer class="center">
+      <p>&copy; hawthorne farm 2022</p>
+    </footer>
   </body>
-  <footer>
-    <p>&copy; Cheat Sheet-Feedback welcome</p>
-  </footer>
 </html>
