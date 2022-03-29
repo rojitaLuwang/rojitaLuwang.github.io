@@ -1,101 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS Selector- Borders and Margins</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1>CHEAT SHEET-CSS Selectors</h1>
-    <h2>(Borders and Margins)</h2>
-    <section>
-      <h2>Border</h2>
-      <p id="para1">The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
-      <table class="pushTable">
-        <thead>
-          <tr>
-            <th>Property</th>
-            <th>Value</th>
-            <th>Description</th>
-            <th>Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>border-style</td>
-            <td>solid, dotted, dashed, none, double, ridge etc.</td>
-            <td>The border-style property specifies what kind of border to display.</td>
-            <td>border-style: solid; &nbsp;border-style: dotted solid;&nbsp;border-top-style: dotted;</td>
-          </tr>
-          <tr>
-            <td>border-width</td>
-            <td>thin, medium, thick or specific size (in px, pt, cm, em, etc)</td>
-            <td>The border-width property specifies the width of the four borders.</td>
-            <td>border-style: solid; &nbsp;&nbsp;border-style: dotted solid;&nbsp;&nbsp;border-top-style: dotted;</td>
-          </tr>
-          <tr>
-            <td>border-color</td>
-            <td>blue, green, HEX, HSL, rgb</td>
-            <td>The border-color property is used to set the color of the four borders.</td>
-            <td>border-color: green;border-color: rgb(201, 76, 76);border-color: hsl(89, 43%, 51%);</td>
-          </tr>
-          <tr>
-            <td>border-radius</td>
-            <td>px, %, em</td>
-            <td>The border-radius property is used to add rounded borders to an element.</td>
-            <td>border-radius: 5px;border-radius: 2em;border-radius: 25%;</td>
-          </tr>
-        </tbody>
-        <tfoot>
-           <tr>
-            <td>border</td>
-            <td>----------</td>
-            <td>The border property is a shorthand property for the following individual border properties:border-width,
-border-style (required) and
-border-color</td>
-            <td>border: 5px solid red;border: 4px dotted blue;border: double;</td>
-          </tr>
-        </tfoot>
-      </table>
-      <hr class="thick">
-    </section>
-    <section>
-      <h2>Margins</h2>
-      <article>
-        <p>
-          Margins are used to create space around elements, outside of any defined borders.
-  margin: 25px 50px 75px 100px;
-        </p>
-        
-          <h3 class="highlight">The auto Value</h3>
-        <p>
-          You can set the margin property to auto to horizontally center the element within its container.
-        </p>
-      </article>
-      <article>
-        <h3 class="highlight">Margin Collapse</h3>
-        <p>
-          Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
-        </p>
-        <p class="makeItalics">
-          This does not happen on left and right margins! Only top and bottom margins!
-        </p>
-        <p>
-          h1 {<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;margin: 0 0 50px 0;<br>
-}
-<br><br>
-h2 { <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;margin: 20px 0 0 0;<br>
-}
-<br><br>
-          Common sense would seem to suggest that the vertical margin between the &lt;h1&gt; and the &lt;h2&gt; would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.
-        </p>
-      </article>
-      <br><br>
-    </section>
-    <hr class="thick">
-  </body>
-  <footer>
-    <p>&copy; Cheat Sheet-Feedback welcome</p>
-  </footer>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <title>East End Active Club</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>East End Active club</h1>
+            <ul>
+                <li><a href="#activities">Weekly Activities</a></li>
+                <li><a href="events">Events Coming Up</a></li>
+                <li><a href="cafe">Healthy Cafe</a></li>
+            </ul>
+        </header>
+        <main class="main-content">
+            <!--Banner-->
+            <section class="banner">
+                <p>We are passionate about providing a platform to have 
+                    fun, build friendships and develop essential skills 
+                    to lead a healthy lifetime.
+                </p>
+                <img class="image-container" src="./images/groupScooting.jpg" alt="banner">
+            </section>
+            <!--Weekly Activities-->
+            <div class="activity-header" id="activities">
+                <h2 class="center">Weekly Activities</h2>
+            </div>
+            
+            <section class="activities">
+                <figure class="activity image-container center">
+                    <img src="./images/groupWalk.jpg" alt="group walk">
+                    <figcaption>Group Walks</figcaption>
+                </figure>
+                <figure class="activity image-container center">
+                    <img src="./images/groupExercise.jpg" alt="group exercise">
+                    <figcaption>Group Exercise</figcaption>
+                </figure>
+                <figure class="activity image-container center">
+                    <img src="./images/footballTraining.jpg" alt="football training">
+                    <figcaption>Football Training</figcaption>
+                </figure>
+                <figure class="activity image-container center">
+                    <img src="./images/cycling.jpg" alt="cycling">
+                    <figcaption>Group Cycling</figcaption>
+                </figure>
+                <figure class="activity image-container center">
+                    <img src="./images/newMoms.jpg" alt="new mom">
+                    <figcaption>New Moms</figcaption>
+                </figure>
+                <figure class="activity image-container center">
+                    <img src="./images/groupRun1.jpg" alt="group run">
+                    <figcaption>Group Run</figcaption>
+                </figure>
+            </section>
+
+            <!--Events Coming Up-->
+            <div class="events-header" id="events">
+                <h2 class="center">Events Coming up</h2>
+            </div>
+            <section class="events">
+                <figure class="event image-container center">
+                    <img src="./images/charity.jpg" alt="charity run">
+                    <figcaption>Charity Run</figcaption>
+                </figure>
+                <figure class="event image-container center">
+                    <img src="./images/treePlanting.jpg" alt="tree planting">
+                    <figcaption>Tree Planting</figcaption>
+                </figure>
+                <figure class="event image-container center">
+                    <img src="./images/cleanUp.jpg" alt="clean up">
+                    <figcaption>Clean Up</figcaption>
+                </figure> 
+            </section>
+
+            <!--Healthy Cafe-->
+            <section class="cafe" id="cafe">
+                <p class="center">Eat Healthy, Stay Healthy All the time !!!</p>
+            </section>
+
+            <div class="meet-up">
+                <img src="./images/groupMeetUp.jpg" alt="group meet up">
+                <div class="center">
+                    <p>Come join us every Friday at the Healthy Cafe</p>
+                    <p>27 Wellbeing Corner SE5 8PK</p>
+                    <p>012-345-9876</p>
+                </div>
+            </div>
+        </main>
+        <footer class="center">
+            <p>&copy East End Active Club 2022</p>
+        </footer>
+    </body>
 </html>
