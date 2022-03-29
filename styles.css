@@ -19,7 +19,6 @@ figcaption {
 
 header {
     position: fixed;
-    height: 7rem;
     z-index: 100;
     display: flex;
     width: 100%;
@@ -106,9 +105,14 @@ a:hover {
 }
 
 @media only screen and (max-width: 650px) {
-    
+    .main-content {
+        height: 9rem;
+    }
     .banner img, .banner p {
         font-size: 2rem;
+    }
+    .banner p {
+        padding-top: 1rem;
     }
 }
 
