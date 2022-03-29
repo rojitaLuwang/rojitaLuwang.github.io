@@ -1,82 +1,184 @@
-body {
-  font-family: "Lucida Console", Courier, monospace; 
-  background-color: antiquewhite;
+html {
+    font-family: "Poppins", "Indie Flower";
+    font-size: 16px;
+    background-color: lightcyan;
 }
 
-h1 {
-  width: 100%;
-  background-color: gainsboro;
-  color: mediumvioletred;
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
+.main-content {
+    position: relative;
+    top: 8rem; /*Offset for the header*/
 }
 
-h2 {
-  color: darkmagenta;
-  font-size:35px;
-  text-align: center;
+.center {
+    text-align: center;
 }
 
-table, th, td {
-  border: 2px solid darkmagenta;
-  width: 800px;
-  border-collapse: collapse;
+figcaption {
+    padding: 1rem;
 }
 
-td {
-  text-align: center;
-  padding: 0;
+header {
+    position: fixed;
+    height: 7rem;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background-color: OliveDrab;
 }
 
-article p {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  padding: 0 20px;
+header h1 {
+    font-weight: 900;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    letter-spacing: 0.5rem;
 }
 
-tr:nth-child(even) {background-color: gainsboro;}
-
-tr:hover {
-  background-color: darksalmon;
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
 }
 
-thead {
-  background-color: mediumorchid;
-  font-size: 20px;
+header li {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
 }
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (max-width: 650px) {
+    header {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
+    header h1 {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-left: 15%;
+    }
+
+    header ul {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.image-container img{
+    display: block;
+    max-width: 100%;
+}
+
+.banner, .meet-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner img, .banner p, .meet-up img, .meet-up div {
+    flex: 1;
+    font-family: "Dancing Script";
+    font-size: 2.5rem;
+}
+
+.banner img {
+    height: 23rem;
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .banner img, .banner p {
+        font-size: 2rem;
+    }
+}
+
+.activity-header, .events-header {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+
+.activities, .events {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.activity ,.event {
+    flex: 1 1 25%;
+}
+
+@media only screen and (max-width: 650px) {
+    .activity-header {
+        font-size: 1.5rem;
+    }
+}
+
+.cafe {
+    background-image: url("./images/food.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.cafe p {
+    font-size: 5rem;
+    font-family: "Dancing Script";
+    color: white;
+}
+
+@media only screen and (max-width: 650px) {
+    .cafe {
+        height: 20rem;
+        margin-top: 1rem;
+    }
+    .cafe p {
+        font-size: 3rem;
+    }
+}
+
+.meet-up {
+    margin-top: 2rem;
+}
+
 
 footer {
-  position: fixed;
-  width: 100%;
-  height: 40px;
-  padding: 0;
-  margin: 0;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  background-color: gainsboro;
-  color: mediumvioletred; 
+    position: fixed;
+    background-color: OliveDrab ;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 2.5rem;
 }
 
-.pushTable {
-  margin-left: 170px;
-}
-
-.highlight {
-  color: mediumorchid;
-  font-size: 20px;
-  padding: 0 20px;
-}
-
-.makeItalics {
-  font-style: italic;
-  color: crimson;
-}
-
-.thick {
-  border: 2px dotted;
-}
-
-#para1 {
-  text-align: center;
+@media only screen and (max-width: 650px) {
+    .meet-up {
+        margin-top: 1rem;
+    }
 }
